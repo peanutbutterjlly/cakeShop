@@ -35,16 +35,23 @@ section {
 .secondary {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cake-img {
   width: 900px;
+  flex: 1 0 570px;
+}
+
+.cake-img img {
+  width: 100%;
 }
 
 .second div {
-  border: 2px solid;
+  width: 90%;
+  display: grid;
+  place-items: center;
 }
 
 .icon {
