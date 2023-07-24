@@ -12,7 +12,7 @@ main {
   background-color: var(--primary-color);
 }
 
-section {
+:where(section) {
   padding-block: var(--big-block);
 }
 
@@ -109,7 +109,14 @@ section {
   background-image: url(/static/img/cake-2.JPG);
 }
 
-.display {
+footer {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: calc(var(--small-block));
 }
 
 @media (max-width: 1195px) {
