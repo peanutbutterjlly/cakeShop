@@ -3,6 +3,10 @@
   --small-block: 2rem;
 }
 
+a {
+  color: inherit;
+}
+
 header img {
   margin-inline: auto;
   max-height: 90vh;
@@ -12,7 +16,7 @@ main {
   background-color: var(--primary-color);
 }
 
-:where(section) {
+section {
   padding-block: var(--big-block);
 }
 
@@ -43,8 +47,17 @@ main {
   width: min(var(--measure), 90vw);
 }
 
-.main h1 {
-  display: none;
+.main h1,
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  position: absolute;
 }
 
 .secondary {
@@ -74,6 +87,7 @@ main {
 }
 
 .words {
+  align-self: baseline;
   margin-block: var(--small-block);
 }
 
@@ -117,6 +131,11 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding-block: calc(var(--small-block));
+}
+
+.socials {
+  display: flex;
+  gap: var(--small-block);
 }
 
 @media (max-width: 1195px) {
