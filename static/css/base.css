@@ -75,24 +75,24 @@ html:focus-within {
 
 :where(h1) {
   font-family: var(--font-family-heading);
-  font-size: 1.802rem;
+  font-size: 3.052rem;
   margin-top: 0;
 }
 :where(h2) {
   font-family: var(--font-family-heading-secondary);
-  font-size: 1.602rem;
+  font-size: 2.441rem;
 }
 :where(h3) {
   font-family: var(--font-family-heading-secondary);
-  font-size: 1.424rem;
+  font-size: 1.953rem;
 }
 :where(h4) {
   font-family: var(--font-family-heading-secondary);
-  font-size: 1.266rem;
+  font-size: 1.563rem;
 }
 :where(h5) {
   font-family: var(--font-family-heading-secondary);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 :where(p) {
