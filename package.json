@@ -1,0 +1,16 @@
+{
+  "name": "cakeshop",
+  "version": "1.0.0",
+  "description": "new site for cakeemup",
+  "keywords": [
+    "cakeemup",
+    "cake",
+    "cake",
+    "shop"
+  ],
+  "author": "Steve Rios",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

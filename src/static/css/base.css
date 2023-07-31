@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'Didact Gothic', sans-serif;
-  src: url(/static/fonts/Didact_Gothic/DidactGothic-Regular.ttf)
-    format('truetype');
+  src: url(/src/static/fonts/Didact_Gothic/DidactGothic-Regular.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Cardo', sans-serif;
-  src: url(/static/fonts/Cardo/Cardo-Regular.ttf) format('truetype');
+  src: url(/src/static/fonts/Cardo/Cardo-Regular.ttf) format('truetype');
 }
+
 :root {
   --font-family-body: 'Didact Gothic', sans-serif;
   --font-family-heading: 'Cardo', serif;
@@ -17,16 +18,19 @@
   --secondary-color: #544013;
   --tertiary-color: #ede9dd;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
+
 :where(:root) {
   font-family: var(--font-family-body);
   font-size: var(--font-size);
@@ -36,66 +40,84 @@
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
 }
+
 html:focus-within {
   scroll-behavior: smooth;
 }
+
 :where(body) {
   min-height: 100vh;
 }
+
 :where(img, picture, video, canvas, svg) {
   display: block;
   max-width: 100%;
 }
+
 :where(input, button, textarea, select) {
   font: inherit;
 }
+
 :where(p, h1, h2, h3, h4, h5, h6, li) {
   max-inline-size: var(--measure);
 }
+
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-family-heading);
   margin: 3rem 0 1.38rem;
 }
+
 :where(h1) {
   font-size: 3.052rem;
   margin-top: 0;
 }
+
 :where(h2) {
   font-size: 2.441rem;
 }
+
 :where(h3) {
   font-size: 1.953rem;
 }
+
 :where(h4) {
   font-size: 1.563rem;
 }
+
 :where(h5) {
   font-size: 1.25rem;
 }
+
 :where(p) {
   margin-bottom: 1rem;
 }
+
 :where(small) {
   font-size: 0.889rem;
 }
+
 a:hover,
 a:focus,
 button:hover,
 button:focus {
   opacity: 0.75;
 }
+
 button:hover,
 button:focus {
   opacity: 0.75;
 }
+
 #root,
 #__next {
   isolation: isolate;
 }
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
